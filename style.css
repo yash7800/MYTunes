@@ -263,7 +263,7 @@ video-section .container{
 @media (min-width:375px) and (max-width: 768px) {
     html{
         margin: 5px 5px;
-        
+        overflow-x: hidden;
     }
     body {
         overflow-y: scroll; /* Always show vertical scrollbar */
