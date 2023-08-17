@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+container{
+    float: left;
+    word-spacing: 10px;
+}
+html,
+body{
+    scroll-behavior: smooth;
+    font-family:"roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    
+}
+section{
+    scroll-margin: 60px;
+}
+.hero-section p {
+    
+    
+    
+    position: relative; 
+  
+    
+    line-height: 1.5;
+    
+   
+}
+
+/* Add a decorative underline */
+.hero-section p::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 4px;
+    background-color: #3498db; /* Change to your preferred color */
+    opacity: 0.5;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    color: rgb(0, 0, 0);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+header {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden; /* Important for creating depth */
+
+    /* Add perspective for a 3D effect */
+    transform: perspective(900px) rotateX(0deg);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo{
+    font-size: 32px;
+    filter: drop-shadow(5px 5px 5px gray);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px ;
+    
+    
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in;
+}
+nav ul li:hover{
+   border-bottom: 2px solid rgb(0, 0, 0);
+   transition: 0.3s ease-in;
+}
+.hero-section{
+    display: grid;
+    height: 90vh;
+    place-items: center;
+    text-align: center;
+}
+button{
+    border: none;
+    padding: 10px 15px;
+    align-items: center;
+    color:white;
+    background-color: black;
+    box-shadow: 5px 5px 5px rgb(62, 61, 61);
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+h1{
+    color: black;
+    font-size: 96px;
+    filter: drop-shadow(5px 5px 5px rgb(81, 81, 81));
+
+}
+p{
+    color: black;
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.music-section{
+    padding-top: 50px;
+    background-color: gray;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 5px rgb(99, 99, 99);
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.iphone-ipad-img{
+    margin-top: -190px;
+    position: relative;
+    top: 190px;
+    filter: drop-shadow(10px 10px 10px black);
+}
+.about-music{
+    padding-top: 500px;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    margin-top: -190px;
+}
+.mac-image img{
+    position: relative;
+    height: 100%;
+    width:80%;
+    padding-left: 300px;
+    filter: drop-shadow(10px 10px 10px black);
+    
+
+
+}
+.video-section h2{
+    
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    
+}
+.video-section{
+   background-color: gray;
+   min-height: 800px;
+   display: grid;
+   place-items: center;
+   min-width: 1000px;
+   filter: drop-shadow(10px 10px 10px black);
+   border-radius: 30px;
+}
+video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+    
+}
+.video-section,.hero-section{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.gift-card img{
+
+    height: 400px;
+    display:flex;
+    align-items: center;
+    place-content: center;
+    width: 900px;
+    padding-right: 100px;
+
+}
+.gift-section h2{
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+.gift-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center content */
+    text-align: center; /* Center text inside the div */
+    margin-top: 50px;
+}
+
+.tertiary-button {
+    margin-top: 10px; /* Adjust margin as needed */
+}
+.footer-upper{
+    margin-top: 70px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    filter: drop-shadow(5px 5px 5px rgb(81, 81, 81));
+    
+}
+.footer-upper .container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-upper h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid whitesmoke;
+    margin-bottom: 10px;
+}
+.footer-lower{
+    background-color: transparent;
+    padding: 20px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
