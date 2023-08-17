@@ -260,9 +260,13 @@ video-section .container{
     margin-top: 50px;
 }
 @media (min-width:375px) and (max-width: 768px) {
-    html,body{
+    html{
         margin: 5px 5px;
         overflow-x: hidden;
+    }
+    body {
+        overflow-y: scroll; /* Always show vertical scrollbar */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
     }
     .logo{
         font-size: small;
