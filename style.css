@@ -259,3 +259,117 @@ video-section .container{
     justify-content: center;
     margin-top: 50px;
 }
+@media (max-width: 768px) {
+    html{
+        margin: 5px 5px;
+        overflow-x: hidden;
+    }
+    .logo{
+        font-size: small;
+        
+    }
+    
+    .hero-section {
+        height: auto; /* Adjust to content height */
+        padding: 80px 20px; /* Adjust padding for spacing */
+    }
+
+    .hero-section p::before {
+        width: 30%; /* Reduce the width of the underline */
+    }
+
+    .logo {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    .nav ul {
+        flex-direction: column; /* Stack navigation items */
+        gap: 10px;
+    }
+
+    .music-section, .about-music, .gift-card, .footer-upper, .footer-lower {
+        margin: 20px 10px; /* Adjust margins for spacing */
+    }
+    
+    .hero-section h1{
+        font-size: 50px;
+
+    }
+    .iphone-ipad-img{
+        
+        width: 1px;
+        height: auto;
+        display: flex;
+        place-content: center;
+        align-items: center;
+    }
+
+    .gift-card img {
+        margin-left: 60px;
+        max-width: 400px;
+        display: grid;
+        align-items: center;
+        height: auto;
+        margin-top: 100px;
+    }
+    .video-section video{
+        width:350px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+
+    }
+    .video-section {
+        min-height: 5px; /* Adjust to content height */
+        min-width: auto; /* Allow content to determine width */
+        padding: 10px 10px; 
+
+        /* Add padding for spacing */
+    }
+    .video-section h2{
+        size: 1px;
+        margin-right:40px ;
+        margin-top: -50px;
+        
+    }
+    .video-section p{
+        align-items: center;
+        display: grid;
+
+        margin-right: 40px;
+        margin-left: 20px;
+        margin-bottom: -5px;
+    }
+    .iphone-ipad-img img{
+        margin: 10px auto; /* Center the image horizontally */
+       min-width: 400px; /* Make the image width responsive */
+        height: 50; 
+    }
+    .about-music{
+        margin-top: -250px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-music .mac-image{
+        height: 200px;
+        width:900px;
+        margin-right:120px;
+        margin-bottom: 200px;
+        
+    }
+    .footer-upper{
+        margin-top: 100px;
+        font-size: small;
+    }
+    a{
+        margin-right: -10px;
+        font-size: 15px
+    }
+    .footer-upper h4{
+        font-size :12px;
+        word-wrap: break-word;
+    }
+
+}
