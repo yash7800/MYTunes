@@ -259,7 +259,7 @@ video-section .container{
     justify-content: center;
     margin-top: 50px;
 }
-@media (max-width: 768px) {
+@media (min-width:326px) and (max-width: 768px) {
     html{
         margin: 5px 5px;
         overflow-x: hidden;
