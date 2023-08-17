@@ -83,6 +83,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 15px ;
+    position: sticky;
     
     
 }
@@ -262,7 +263,7 @@ video-section .container{
 @media (min-width:375px) and (max-width: 768px) {
     html{
         margin: 5px 5px;
-        overflow-x: hidden;
+        
     }
     body {
         overflow-y: scroll; /* Always show vertical scrollbar */
@@ -374,6 +375,24 @@ video-section .container{
     .footer-upper h4{
         font-size :12px;
         word-wrap: break-word;
+    }
+    header{
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden; /* Important for creating depth */
+    
+        /* Add perspective for a 3D effect */
+        transform: perspective(900px) rotateX(0deg);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    nav{
+        position: sticky;
     }
 
 }
